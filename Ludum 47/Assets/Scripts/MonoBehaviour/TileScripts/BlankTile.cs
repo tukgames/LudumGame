@@ -25,6 +25,7 @@ public class BlankTile : MonoBehaviour
         {
             Collided();
         }
+
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -33,10 +34,52 @@ public class BlankTile : MonoBehaviour
         {
             Collided();
         }
+        if (collision.transform.GetComponent<Enemy>() != null)
+        {
+            //check the surrounding tiles.
+            //bool isIn = false;
+            /*if(TileGenerator.instance.getTile(xValue + 1, yValue) != null)
+            {
+                if(TileGenerator.instance.getTile(xValue + 1, yValue).GetComponent<Tile>().currentEnemies.Contains(collision.gameObject))
+                {
+                    isIn = true;
+                }
+            }
+            if (TileGenerator.instance.getTile(xValue - 1, yValue) != null)
+            {
+                if (TileGenerator.instance.getTile(xValue - 1, yValue).GetComponent<Tile>().currentEnemies.Contains(collision.gameObject))
+                {
+                    isIn = true;
+                }
+            }
+
+            if (TileGenerator.instance.getTile(xValue, yValue + 1) != null)
+            {
+                if (TileGenerator.instance.getTile(xValue, yValue + 1).GetComponent<Tile>().currentEnemies.Contains(collision.gameObject))
+                {
+                    isIn = true;
+                }
+            }
+            if (TileGenerator.instance.getTile(xValue, yValue - 1) != null)
+            {
+                if (TileGenerator.instance.getTile(xValue, yValue - 1).GetComponent<Tile>().currentEnemies.Contains(collision.gameObject))
+                {
+                    isIn = true;
+                }
+            }*/
+
+            if (!collision.isTrigger)
+            {
+                collision.GetComponent<Enemy>().DestroyEnemy();
+                Debug.Log("Killed enemy");
+            }
+        }
+
     }
 
     public void Collided()
     {
+        //Debug.Log("collided " + xValue + "" + yValue);
         TileGenerator.instance.currentBlankTiles.Remove(gameObject);
         TileGenerator.instance.SpawnTile(xValue, yValue);
         Destroy(gameObject);
@@ -46,6 +89,7 @@ public class BlankTile : MonoBehaviour
     {
         if(collision.transform.name == "blankLeave")
         {
+            //Debug.Log("blank tile despawned");
             TileGenerator.instance.currentBlankTiles.Remove(gameObject);
             Destroy(gameObject);
         }

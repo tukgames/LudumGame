@@ -44,10 +44,12 @@ public class Tile : MonoBehaviour
         {
             if (collision.transform.name == "tileLeave" && !StateManager.instance.playerDead)
             {
+                //Debug.Log("Tile Despawned " + xValue + "" + yValue);
                 DestroyEnemies();
-                
+                //Debug.Log("Got here");
                 TileGenerator.instance.SpawnBlank(xValue, yValue);
                 TileGenerator.instance.currentTiles.Remove(gameObject);
+                //Debug.Log("Got here 2");
                 Destroy(gameObject);
             }
 

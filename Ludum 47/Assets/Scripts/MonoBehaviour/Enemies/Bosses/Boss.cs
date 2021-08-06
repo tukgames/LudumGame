@@ -63,8 +63,8 @@ public class Boss : Enemy
     }
 
     private void OnDestroy()
-    { 
-
+    {
+        DestroyHealthBar();
         BossManager.instance.alreadyBoss = false;
     }
 

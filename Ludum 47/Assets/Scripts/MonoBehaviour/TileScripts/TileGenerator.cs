@@ -344,6 +344,8 @@ public class TileGenerator : MonoBehaviour
         blank.GetComponent<BlankTile>().xValue = x;
         blank.GetComponent<BlankTile>().yValue = y;
 
+        blank.transform.localScale = new Vector3(tileWidth, tileWidth, 1f);
+
         currentBlankTiles.Add(blank);
     }
 

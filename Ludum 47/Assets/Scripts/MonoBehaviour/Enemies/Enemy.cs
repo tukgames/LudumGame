@@ -67,11 +67,12 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.transform.name == "blankLeave")
+        /*if(collision.transform.name == "blankLeave")
         {
             DestroyHealthBar();
             Destroy(gameObject);
-        }
+        }*/
+        
 
     }
 
@@ -113,6 +114,12 @@ public class Enemy : MonoBehaviour
     public virtual void OpenDoors()
     {
 
+    }
+
+    public void DestroyEnemy()
+    {
+        DestroyHealthBar();
+        Destroy(gameObject);
     }
 
     
