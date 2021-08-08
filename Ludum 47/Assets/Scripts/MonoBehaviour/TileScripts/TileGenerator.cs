@@ -81,6 +81,9 @@ public class TileGenerator : MonoBehaviour
         return null;
     }
 
+    /*
+     x and y is the coordinates of a tile. More tiles will be spawned around this tile based on availibility.
+     */
     public void SpawnTile(int x, int y)
     {
         List<GameObject> possibleTiles;
