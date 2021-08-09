@@ -497,3 +497,4 @@ MonoBehaviour:
   launchTime: 3
   decelerationTime: 2
   vulColor: {r: 0.30535775, g: 0.41323143, b: 0.8867924, a: 1}
+  rechargeColor: {r: 0.4751377, g: 0, b: 1, a: 1}

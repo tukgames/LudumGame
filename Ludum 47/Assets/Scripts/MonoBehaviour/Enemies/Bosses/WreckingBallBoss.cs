@@ -11,14 +11,14 @@ public class WreckingBallBoss : MonoBehaviour
     public float vulnerableTime;
     public float launchTime;
     public float decelerationTime;
-
+    
     BossDoors bossDoors;
     Rigidbody2D rb;
 
     string startingTag;
     public Color vulColor;
     Color startingColor;
-
+    public Color rechargeColor;
     Transform target;
     
     // Start is called before the first frame update
@@ -44,7 +44,7 @@ public class WreckingBallBoss : MonoBehaviour
         rb.angularVelocity = 0;
         transform.Rotate(0,0,180f * Time.deltaTime);
     }
-
+    
     IEnumerator RunRoutine(Transform player)
     {
         target = player;
@@ -52,7 +52,7 @@ public class WreckingBallBoss : MonoBehaviour
         {
             Reset();
             yield return new WaitForSeconds(loadTime);
-            //luanch towards player
+            //launch towards player
             rb.AddForce(CalculateLaunchVector(), ForceMode2D.Impulse);
             yield return new WaitForSeconds(launchTime);
             //slow down and become vulnerable
@@ -111,6 +111,10 @@ public class WreckingBallBoss : MonoBehaviour
         //Debug.Log("Slow time: " + (Time.time - startingTime));
 
         
+
+        GetComponent<SpriteRenderer>().color = rechargeColor;
+
+
     }
 
     public void Reset()
