@@ -447,9 +447,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  smoothSpeed: 0.08
+  smoothSpeed: 0.125
   offset: {x: 0, y: 0}
   distaceFromScreen: -10
+  lead: 1
+  maxLead: 5
+  leadModifier: 5
   currentPosition: {x: 0, y: 0, z: 0}
 --- !u!20 &519420031
 Camera:
