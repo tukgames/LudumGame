@@ -79,7 +79,7 @@ public class WreckingBallBoss : MonoBehaviour
 
     public Vector2 CalculateLaunchVector()
     {
-
+        if (target == null) return Vector2.zero;
         Vector2 diff = target.position - transform.position;
         diff.Normalize();
         diff *= launchForce;

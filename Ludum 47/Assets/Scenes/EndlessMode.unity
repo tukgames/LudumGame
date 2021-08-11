@@ -456,7 +456,7 @@ MonoBehaviour:
   minOrtho: 8
   maxOrtho: 12
   numVelPerOrtho: 5
-  zoomSpeed: 5
+  zoomSpeed: 4.5
   zoom: 1
   currentPosition: {x: 0, y: 0, z: 0}
 --- !u!20 &519420031
