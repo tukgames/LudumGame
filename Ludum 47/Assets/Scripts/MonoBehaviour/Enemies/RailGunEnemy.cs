@@ -59,7 +59,7 @@ public class RailGunEnemy : Enemy
 
             Rotate();
             Debug.Log("Started rail gun process");
-            GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
+            GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             GetComponent<Wander>().StopWander();
             rotate = false;
