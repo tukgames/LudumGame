@@ -12,7 +12,10 @@ public class playPauseManager : MonoBehaviour
     public AnimationClip clip1;
     public AnimationClip clip2;
     private UI userI;
+
+
     public pauseTextManager textManager;
+    public retryButtonManager retryManager;
 
     // Start is called before the first frame update
     void Start() {
@@ -27,10 +30,16 @@ public class playPauseManager : MonoBehaviour
         // Manages states based on bool and flips it when called
         if (toggleBool) {
             pause();
+
+            // Manager Controls
             textManager.slideIn();
+            retryManager.slideIn();
         } else {
             resume();
+
+            // Manager Controls
             textManager.slideOut();
+            retryManager.slideOut();
         }
 
     }
