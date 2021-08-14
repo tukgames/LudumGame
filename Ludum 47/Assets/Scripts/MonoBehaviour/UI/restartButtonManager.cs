@@ -11,6 +11,7 @@ public class restartButtonManager : MonoBehaviour
     }
 
     private void OnEnable() {
+        ani = this.GetComponent<Animator>();
         ani.Play("RestartSlideIn");
     }
     // Update is called once per frame

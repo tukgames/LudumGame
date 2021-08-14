@@ -54,10 +54,10 @@ public class MachineGunEnemy : Enemy
 
         float plusRot = zTrans + (rotateSpeed * Time.deltaTime);
         float minusRot = zTrans - (rotateSpeed * Time.deltaTime);
-        Debug.Log(RotationZ + " " + plusRot + " " + minusRot + " " + zTrans);
+        //Debug.Log(RotationZ + " " + plusRot + " " + minusRot + " " + zTrans);
         if (plusRot > RotationZ && minusRot < RotationZ)
         {
-            Debug.Log(transform.name + " has the correct rot");
+           // Debug.Log(transform.name + " has the correct rot");
             transform.rotation = Quaternion.Euler(0, 0, RotationZ);
         }
         else

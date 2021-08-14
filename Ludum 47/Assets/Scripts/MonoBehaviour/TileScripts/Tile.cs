@@ -75,7 +75,10 @@ public class Tile : MonoBehaviour
         if(collision.GetComponent<Enemy>() != null)
         {
             //add enemy to list
-            currentEnemies.Add(collision.gameObject);
+            if (!currentEnemies.Contains(collision.gameObject))
+            {
+                currentEnemies.Add(collision.gameObject);
+            }
 
         }
     }

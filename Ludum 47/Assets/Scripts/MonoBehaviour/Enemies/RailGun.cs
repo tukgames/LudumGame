@@ -77,18 +77,18 @@ public class RailGun : MonoBehaviour
     }
 
 
-    public void StartRailGun(Transform targetTransform)
+    public void StartRailGun(Vector3 targetPosition)
     {
-        SetLine(targetTransform);
-        rayChargeCoroutine = StartCoroutine(FireCoroutine(targetTransform));
+        SetLine(targetPosition);
+        rayChargeCoroutine = StartCoroutine(FireCoroutine(targetPosition));
     }
 
 
 
-    public void SetLine(Transform targetTransform)
+    public void SetLine(Vector3 targetPosition)
     {
 
-        lineEndPosition = new Vector2( targetTransform.position.x - transform.position.x, targetTransform.position.y - transform.position.y);
+        lineEndPosition = new Vector2( targetPosition.x - transform.position.x, targetPosition.y - transform.position.y);
 
         //Debug.Log(lineEndPosition);
 
@@ -100,7 +100,7 @@ public class RailGun : MonoBehaviour
         lr.enabled = true;
     }
 
-    IEnumerator FireCoroutine(Transform targetTransform)
+    IEnumerator FireCoroutine(Vector3 targetPosition)
     {
         float time = 0;
 

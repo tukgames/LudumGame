@@ -65,7 +65,7 @@ public class RailGunEnemy : Enemy
             rotate = false;
             frozenRotation = Quaternion.Euler(transform.eulerAngles.x,transform.eulerAngles.y,transform.eulerAngles.z);
 
-            GetComponent<RailGun>().StartRailGun(target);
+            GetComponent<RailGun>().StartRailGun(target.position);
             isHappening = true;
         }
     }
