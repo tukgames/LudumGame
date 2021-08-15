@@ -239,7 +239,7 @@ MonoBehaviour:
     type: 3}
   offset: {x: 0, y: 2, z: 0}
   doors: {fileID: 0}
-  difficultyRating: 2
+  difficultyRating: 1
 --- !u!114 &5856104099614959354
 MonoBehaviour:
   m_ObjectHideFlags: 0

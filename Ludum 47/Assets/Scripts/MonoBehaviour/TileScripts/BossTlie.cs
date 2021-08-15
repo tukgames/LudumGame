@@ -39,9 +39,12 @@ public class BossTlie : MonoBehaviour
         GameObject boss = Instantiate(bossToSpawn, transform.position, Quaternion.identity);
         GetComponent<Tile>().currentEnemies.Add(boss);
         boss.GetComponent<Boss>().doors = doorHandler;
-        if(boss.GetComponent<WreckingBallBoss>() != null)
+        if (boss.GetComponent<WreckingBallBoss>() != null)
         {
             doorHandler.wBoss = boss.GetComponent<WreckingBallBoss>();
+        } else if (boss.GetComponent<RailGunBoss>() != null)
+        {
+            doorHandler.rBoss = boss.GetComponent<RailGunBoss>();
         }
 
         //need to give the boss the door handler

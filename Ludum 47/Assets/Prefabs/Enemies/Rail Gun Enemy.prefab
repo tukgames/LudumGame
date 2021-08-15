@@ -234,11 +234,10 @@ MonoBehaviour:
   lineColor: {r: 1, g: 1, b: 1, a: 0}
   startWidth: 0.18
   endWidth: 0.18
-  shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   lineLength: 30
-  chargeTime: 2
+  chargeTime: 1.5
   alphaChangeSpeed: 3
-  lifeTime: 1.7
+  lifeTime: 3.5
   particlePrefab: {fileID: 5862031640709939462, guid: ee202ef86fef46b45b514ea1030d0bbf,
     type: 3}
   particleSpawn: {fileID: 4403533904110868861}

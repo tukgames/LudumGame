@@ -18,7 +18,7 @@ public class TrailParticle : MonoBehaviour
         editable_shape = ps.shape;
         editable_shape.enabled = true;
         editable_shape.position = transform.position;
-        Debug.Log(editable_shape.position);
+        //Debug.Log(editable_shape.position);
 
     }
 

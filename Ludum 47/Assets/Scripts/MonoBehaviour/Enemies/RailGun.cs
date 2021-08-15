@@ -30,6 +30,8 @@ public class RailGun : MonoBehaviour
     Coroutine rayChargeCoroutine;
     Vector3 lineEndPosition;
 
+    bool gened = false;
+
     public enum BlendMode
     {
         Opaque,
@@ -41,14 +43,21 @@ public class RailGun : MonoBehaviour
 
     void Start()
     {
+        if(!gened) gen();
 
+
+    }
+
+    public void gen()
+    {
+        gened = true;
         mat = new Material(Shader.Find("Standard"));
 
         ChangeRenderMode(mat, BlendMode.Transparent);
 
-        
 
-        
+
+
 
 
 
@@ -64,7 +73,6 @@ public class RailGun : MonoBehaviour
         lr.endWidth = endWidth;
 
         lr.enabled = false;
-
     }
 
     // Update is called once per frame
@@ -79,6 +87,7 @@ public class RailGun : MonoBehaviour
 
     public void StartRailGun(Vector3 targetPosition)
     {
+        if(!gened) gen();
         SetLine(targetPosition);
         rayChargeCoroutine = StartCoroutine(FireCoroutine(targetPosition));
     }
@@ -93,7 +102,9 @@ public class RailGun : MonoBehaviour
         //Debug.Log(lineEndPosition);
 
         lineEndPosition *= lineLength;
-        
+
+        //Debug.Log(lr.name);
+
         lr.SetPosition(0, transform.position);
         lr.SetPosition(1, transform.position + lineEndPosition);
 
@@ -106,12 +117,12 @@ public class RailGun : MonoBehaviour
 
         ParticleSystem ps = Instantiate(particlePrefab, particleSpawn.position, Quaternion.Euler(new Vector3(-90,0,0))).GetComponent<ParticleSystem>();
 
-        GetComponent<RailGunEnemy>().Rotate();
+        if (GetComponent<RailGunEnemy>() != null)  GetComponent<RailGunEnemy>().Rotate();
 
 
         mat.color = lineColor;
 
-        Debug.Log(mat.color);
+        //Debug.Log(mat.color);
 
         while(time <= chargeTime)
         {
@@ -138,7 +149,7 @@ public class RailGun : MonoBehaviour
 
             if (hit.collider != null)
             {
-                Debug.Log("hitSomething");
+                //Debug.Log("hitSomething");
                 
                 hit.transform.GetComponent<Player>().KillPlayer();
             }
@@ -148,9 +159,12 @@ public class RailGun : MonoBehaviour
             time += Time.deltaTime;
             yield return null;
         }
-
+        Debug.Log("Line disabled");
         lr.enabled = false;
-        GetComponent<RailGunEnemy>().ResetEnemy();
+        if (GetComponent<RailGunEnemy>() != null)
+        {
+            GetComponent<RailGunEnemy>().ResetEnemy();
+        }
     }
 
     public static void ChangeRenderMode(Material standardShaderMaterial, BlendMode blendMode)

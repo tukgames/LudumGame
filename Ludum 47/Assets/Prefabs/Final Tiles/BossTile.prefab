@@ -111,6 +111,7 @@ MonoBehaviour:
   - {fileID: 5856104099614959350, guid: 875fd5a27fc44e64db1ff89aad8544db, type: 3}
   - {fileID: 9127373935751149141, guid: c6e4183847f51844a9ae784022cd0417, type: 3}
   - {fileID: 4698749753306915177, guid: a8fd02bbf18defe468e7cdffe86d57fd, type: 3}
+  - {fileID: 8795078089860983449, guid: 9f972a873646bac44a48c607c1f6998e, type: 3}
   doorHandler: {fileID: 1527547108455794739}
 --- !u!1 &41339463454087129
 GameObject:

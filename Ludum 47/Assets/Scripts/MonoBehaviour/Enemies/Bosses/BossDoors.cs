@@ -10,6 +10,7 @@ public class BossDoors : MonoBehaviour
     public GameObject door2;
 
     public WreckingBallBoss wBoss;
+    public RailGunBoss rBoss;
 
     public float doorSpeed;
     [HideInInspector]
@@ -22,6 +23,7 @@ public class BossDoors : MonoBehaviour
     {
         active = true;
         doorsClosed = false;
+
     }
 
     // Update is called once per frame
@@ -54,12 +56,15 @@ public class BossDoors : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && !doorsClosed)
         {
             CloseDoors();
             if(wBoss != null)
             {
                 wBoss.StartRoutine(collision.transform);
+            } else if (rBoss != null)
+            {
+                rBoss.Starting();
             }
         }
     }
