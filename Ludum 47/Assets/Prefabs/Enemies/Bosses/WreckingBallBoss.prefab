@@ -342,6 +342,7 @@ GameObject:
   - component: {fileID: 4698749753306915183}
   - component: {fileID: 4698749753306915182}
   - component: {fileID: 4698749753306915171}
+  - component: {fileID: 5829978320966939204}
   m_Layer: 0
   m_Name: WreckingBallBoss
   m_TagString: Kill player
@@ -498,3 +499,21 @@ MonoBehaviour:
   decelerationTime: 2
   vulColor: {r: 0.30535775, g: 0.41323143, b: 0.8867924, a: 1}
   rechargeColor: {r: 0.4751377, g: 0, b: 1, a: 1}
+--- !u!114 &5829978320966939204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4698749753306915177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57e57b7861cc1d544bd77b6fb1d9b6b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stripeCount: 2
+  stripeThickness: 0.5
+  stripeLengthModifier: 2
+  totalStripeOffset: 45
+  individualStripeOffset: 90
+  stripeColor: {r: 0, g: 0, b: 0, a: 1}
