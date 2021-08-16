@@ -20,6 +20,8 @@ public class WreckingBallBoss : MonoBehaviour
     Color startingColor;
     public Color rechargeColor;
     Transform target;
+
+    public float numLaunchInRow;
     
     // Start is called before the first frame update
     void Start()
@@ -53,8 +55,11 @@ public class WreckingBallBoss : MonoBehaviour
             Reset();
             yield return new WaitForSeconds(loadTime);
             //launch towards player
-            rb.AddForce(CalculateLaunchVector(), ForceMode2D.Impulse);
-            yield return new WaitForSeconds(launchTime);
+            for (int i = 0; i < numLaunchInRow; i++)
+            {
+                rb.AddForce(CalculateLaunchVector(), ForceMode2D.Impulse);
+                yield return new WaitForSeconds(launchTime);
+            }
             //slow down and become vulnerable
             StartCoroutine(Slow());
             yield return new WaitForSeconds(vulnerableTime);
@@ -116,6 +121,27 @@ public class WreckingBallBoss : MonoBehaviour
 
 
     }
+
+    /*public IEnumerator SlowWithoutVul()
+    {
+        //lerp position to 0
+        Vector3 startingVel = rb.velocity;
+        //float startingTime = Time.time;
+
+        float timer = 1;
+
+        //GetComponent<Boss>().playerKills = true;
+        gameObject.tag = "Untagged";
+        GetComponent<SpriteRenderer>().color = vulColor;
+
+
+        while (timer >= 0)
+        {
+            rb.velocity = Vector3.Lerp(startingVel, Vector3.zero, 1f - timer);
+            timer -= Time.deltaTime / decelerationTime;
+            yield return null;
+        }
+    }*/
 
     public void Reset()
     {

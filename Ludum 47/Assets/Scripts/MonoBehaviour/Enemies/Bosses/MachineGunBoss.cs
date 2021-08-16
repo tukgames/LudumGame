@@ -70,7 +70,7 @@ public class MachineGunBoss : MonoBehaviour
             count++;
             yield return new WaitForSeconds(fireSpeed);
         }
-        Debug.Log(Time.time - startTime);
+        //Debug.Log(Time.time - startTime);
     }
 
     public IEnumerator Rotate()

@@ -44,7 +44,12 @@ public class Tile : MonoBehaviour
         {
             if (collision.transform.name == "tileLeave" && !StateManager.instance.playerDead)
             {
-                //Debug.Log("Tile Despawned " + xValue + "" + yValue);
+                //Debug.Log("tile despawned" + transform.name);
+                //Debug.Log("Tile Despawned " + xValue + "" + yValue + " " + transform.name);
+                if (collision.transform.name.Contains("oss"))
+                {
+                    Debug.Log(collision.name);
+                }
                 DestroyEnemies();
                 //Debug.Log("Got here");
                 TileGenerator.instance.SpawnBlank(xValue, yValue);
@@ -86,7 +91,7 @@ public class Tile : MonoBehaviour
     public void DestroyEnemies()
     {
         int numEnemies = currentEnemies.Count;
-        int amountRemoved = 0;
+        //int amountRemoved = 0;
         /*for(int i = 0; i < numEnemies; i++)
         {
             if (currentEnemies[i-amountRemoved] != null)
@@ -110,6 +115,10 @@ public class Tile : MonoBehaviour
         {
             if (currentEnemies[i] != null)
             {
+                if (currentEnemies[i].name.Contains("oss"))
+                {
+                    Debug.Log(currentEnemies[i].name);
+                }
                 Destroy(currentEnemies[i].gameObject);
             }
         }

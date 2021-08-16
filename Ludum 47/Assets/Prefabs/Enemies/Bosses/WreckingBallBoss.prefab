@@ -492,13 +492,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdefc966a636ab14ba04e21b90bb084d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launchForce: 110
+  launchForce: 150
   loadTime: 1
-  vulnerableTime: 2.5
+  vulnerableTime: 3
   launchTime: 3
   decelerationTime: 2
   vulColor: {r: 0.30535775, g: 0.41323143, b: 0.8867924, a: 1}
   rechargeColor: {r: 0.4751377, g: 0, b: 1, a: 1}
+  numLaunchInRow: 3
 --- !u!114 &5829978320966939204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,8 +513,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stripeCount: 2
-  stripeThickness: 0.5
+  stripeThickness: 2
   stripeLengthModifier: 2
   totalStripeOffset: 45
   individualStripeOffset: 90
-  stripeColor: {r: 0, g: 0, b: 0, a: 1}
+  stripeColor: {r: 0.88139236, g: 1, b: 0, a: 1}

@@ -66,6 +66,7 @@ public class Boss : Enemy
     {
         DestroyHealthBar();
         BossManager.instance.alreadyBoss = false;
+        //Debug.Log("boss was destroyed");
     }
 
     public override void OpenDoors()

@@ -69,6 +69,11 @@ public class BossDoors : MonoBehaviour
         }
     }
 
+    /*private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.transform.name == "tileLeave" && !StateManager.instance.playerDead) Debug.Log("Happened");
+    }*/
+
     public IEnumerator Open(GameObject door)
     {
         float timer = 0;

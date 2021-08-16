@@ -55,10 +55,10 @@ public class RailGunEnemy : Enemy
         }
         if (collision.transform.CompareTag("Player") && !isHappening)
         {
-            Debug.Log("realized was player");
+            //Debug.Log("realized was player");
 
             Rotate();
-            Debug.Log("Started rail gun process");
+            //Debug.Log("Started rail gun process");
             GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             GetComponent<Wander>().StopWander();

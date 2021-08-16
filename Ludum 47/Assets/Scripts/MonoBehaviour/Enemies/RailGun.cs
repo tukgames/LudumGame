@@ -154,12 +154,12 @@ public class RailGun : MonoBehaviour
                 hit.transform.GetComponent<Player>().KillPlayer();
             }
 
-            Debug.DrawLine(transform.position, hit.point);
+            //Debug.DrawLine(transform.position, hit.point);
 
             time += Time.deltaTime;
             yield return null;
         }
-        Debug.Log("Line disabled");
+        //Debug.Log("Line disabled");
         lr.enabled = false;
         if (GetComponent<RailGunEnemy>() != null)
         {
