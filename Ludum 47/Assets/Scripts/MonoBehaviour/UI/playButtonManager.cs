@@ -19,7 +19,6 @@ public class playButtonManager : MonoBehaviour
             this.gameObject.SetActive(false);
         }
 
-        Debug.Log("dripswag");
     }
 
     // Update is called once per frame
@@ -29,7 +28,6 @@ public class playButtonManager : MonoBehaviour
     }
 
     public void startSequence() {
-        Debug.Log("Start sequence started");
         ui.Resume();
         playPause.SetActive(true);
         
