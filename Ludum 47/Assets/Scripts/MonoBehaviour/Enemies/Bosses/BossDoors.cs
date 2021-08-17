@@ -77,6 +77,7 @@ public class BossDoors : MonoBehaviour
     public IEnumerator Open(GameObject door)
     {
         float timer = 0;
+        ScoreManager.instance.ResumeLoseTimer();
 
         while (door.transform.localScale.x > 0)
         {
@@ -91,6 +92,7 @@ public class BossDoors : MonoBehaviour
     public IEnumerator Close(GameObject door)
     {
         float timer = 0;
+        ScoreManager.instance.StopLoseTimer();
 
         while (door.transform.localScale.x <= 0.6)
         {

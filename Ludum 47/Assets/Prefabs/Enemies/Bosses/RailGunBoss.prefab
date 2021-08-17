@@ -624,6 +624,7 @@ MonoBehaviour:
   spawnProbability: 0
   hitpoints: 10
   startingHitPoints: 0
+  scoreValue: 200
   particlePrefab: {fileID: 9127205238536965998, guid: 87924814d48be814e87d6fc545a0735c,
     type: 3}
   healthBarPrefab: {fileID: 817792309290223854, guid: c7083e0e94cb0ac4ea8e0e63bca666a8,

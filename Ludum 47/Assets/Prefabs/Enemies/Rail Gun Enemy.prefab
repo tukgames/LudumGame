@@ -215,6 +215,7 @@ MonoBehaviour:
   spawnProbability: 8
   hitpoints: 1
   startingHitPoints: 0
+  scoreValue: 10
   particlePrefab: {fileID: 4020185735772678057, guid: 8ab83d7ec46b05046880d36a6067f7e5,
     type: 3}
   target: {fileID: 0}

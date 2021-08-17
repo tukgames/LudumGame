@@ -16,6 +16,8 @@ public class Enemy : MonoBehaviour
     [HideInInspector]
     public int startingHitPoints;
 
+    public int scoreValue;
+
     //public int distanceToDestroy = 100;
 
     public GameObject particlePrefab;
@@ -54,6 +56,7 @@ public class Enemy : MonoBehaviour
                 {
                     Instantiate(particlePrefab, transform.position, Quaternion.identity);
                 }
+                PlayerKilled();
                 DestroyHealthBar();
                 OpenDoors();
                 Destroy(gameObject);
@@ -120,6 +123,11 @@ public class Enemy : MonoBehaviour
     {
         DestroyHealthBar();
         Destroy(gameObject);
+    }
+
+    public void PlayerKilled()
+    {
+        ScoreManager.instance.EnemyKilled(scoreValue);
     }
 
     

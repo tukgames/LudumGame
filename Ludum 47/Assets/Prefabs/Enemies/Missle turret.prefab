@@ -174,6 +174,8 @@ MonoBehaviour:
   wallKills: 0
   spawnProbability: 7
   hitpoints: 3
+  startingHitPoints: 0
+  scoreValue: 15
   particlePrefab: {fileID: 9127205238536965998, guid: 87924814d48be814e87d6fc545a0735c,
     type: 3}
 --- !u!1 &8298466310535435755
