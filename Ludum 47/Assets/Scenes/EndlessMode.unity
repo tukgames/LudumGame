@@ -324,7 +324,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_BackGroundColor: {r: 0.20392157, g: 0.21568628, b: 0.19215687, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1242,6 +1242,7 @@ MonoBehaviour:
   - {fileID: 4222576799033619049, guid: 6dbfca1c47abcae48902b1b4053c9a6d, type: 3}
   - {fileID: 8298466310535248773, guid: a3f30651fbfad4848b48aa3ff3990d64, type: 3}
   - {fileID: 7255404571330163486, guid: 320288811b335b04294dd10cbf21883f, type: 3}
+  - {fileID: 560997058086435992, guid: c19c0caf57a8a4342a966c6f8c8ef0da, type: 3}
   maxRequiredEnemies: 4
   randomRangeOfEnemies: 2
   spawnRate: 10
