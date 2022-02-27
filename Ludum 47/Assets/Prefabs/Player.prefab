@@ -109,6 +109,7 @@ GameObject:
   - component: {fileID: 7937612415440427788}
   - component: {fileID: 7937612415440427785}
   - component: {fileID: 7937612415440427782}
+  - component: {fileID: -3416154594907515952}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -125,7 +126,7 @@ Transform:
   m_GameObject: {fileID: 7937612415440427791}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.01, y: 0.45, z: 0}
-  m_LocalScale: {x: 0.64934385, y: 0.6883054, z: 1}
+  m_LocalScale: {x: 0.669, y: 0.669, z: 1}
   m_Children:
   - {fileID: 5333448146232345838}
   - {fileID: 412902717821186830}
@@ -270,3 +271,16 @@ MonoBehaviour:
   ExplosionPrefab: {fileID: 9127205238536965998, guid: 87924814d48be814e87d6fc545a0735c,
     type: 3}
   damage: 1
+--- !u!114 &-3416154594907515952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7937612415440427791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b62c0d489682004b844040885906b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skin: {fileID: 21300000, guid: 6f3d3dedbd1e01747a68fb469de56f22, type: 3}
