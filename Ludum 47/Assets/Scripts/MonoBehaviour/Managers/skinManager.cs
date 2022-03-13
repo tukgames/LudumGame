@@ -14,24 +14,27 @@ public class skinManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // Parent's Renderer
-        pRenderer = this.GetComponent<SpriteRenderer>();
+        if (skin != null)
+        {
+            // Parent's Renderer
+            pRenderer = this.GetComponent<SpriteRenderer>();
 
-        // Initialize Skin Holder Object
-        skinHolder = new GameObject();
-        skinHolder.name = "skinHolder";
+            // Initialize Skin Holder Object
+            skinHolder = new GameObject();
+            skinHolder.name = "skinHolder";
 
-        // Modify Skin Holder
-        skinHolder.transform.parent = this.transform;
-        shRenderer = skinHolder.AddComponent<SpriteRenderer>();
-        shRenderer.sprite = skin;
-        shRenderer.sortingOrder = pRenderer.sortingOrder + 1;
+            // Modify Skin Holder
+            skinHolder.transform.parent = this.transform;
+            shRenderer = skinHolder.AddComponent<SpriteRenderer>();
+            shRenderer.sprite = skin;
+            shRenderer.sortingOrder = pRenderer.sortingOrder + 1;
 
 
-        // Adjust scale by dividing bound size of parent by the skin then multiplying by the inverse scale of the parent
-        // I do not know why this works but I do not want to do the math to learn why it does
-        float adjustedScale = (pRenderer.bounds.size.x) / (shRenderer.bounds.size.x) * Mathf.Pow(this.transform.localScale.x, -1) + (float)0.001;
-        skinHolder.transform.localScale = new Vector3(adjustedScale, adjustedScale, 1);
+            // Adjust scale by dividing bound size of parent by the skin then multiplying by the inverse scale of the parent
+            // I do not know why this works but I do not want to do the math to learn why it does
+            float adjustedScale = (pRenderer.bounds.size.x) / (shRenderer.bounds.size.x) * Mathf.Pow(this.transform.localScale.x, -1) + (float)0.001;
+            skinHolder.transform.localScale = new Vector3(adjustedScale, adjustedScale, 1);
+        }
 
 
         
@@ -39,11 +42,5 @@ public class skinManager : MonoBehaviour
 
 
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
