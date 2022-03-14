@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
     {
         if(collision.transform.CompareTag("Kill player"))
         {
+            //Debug.Log("Player hit a killing object.");
             KillPlayer();
         }
     }
