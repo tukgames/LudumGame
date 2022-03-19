@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log(collision.transform.tag);
         if(collision.transform.CompareTag("Kill player"))
         {
             //Debug.Log("Player hit a killing object.");

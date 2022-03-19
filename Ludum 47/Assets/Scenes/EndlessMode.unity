@@ -1243,6 +1243,7 @@ MonoBehaviour:
   - {fileID: 8298466310535248773, guid: a3f30651fbfad4848b48aa3ff3990d64, type: 3}
   - {fileID: 7255404571330163486, guid: 320288811b335b04294dd10cbf21883f, type: 3}
   - {fileID: 560997058086435992, guid: c19c0caf57a8a4342a966c6f8c8ef0da, type: 3}
+  - {fileID: 1991859662519885664, guid: 9f713a701754e2642847996bd308113a, type: 3}
   maxRequiredEnemies: 4
   randomRangeOfEnemies: 2
   spawnRate: 10
