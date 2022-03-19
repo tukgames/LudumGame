@@ -35,7 +35,9 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.CompareTag("wall") && wallKills)
+
+        // WAS PREVIOUSLY if (collision.transform.CompareTag("wall") && playerKills)
+        if (collision.GetContact(0).collider.transform.CompareTag("wall") && wallKills)
         {
             if (!StateManager.instance.playerDead)
             {
@@ -46,7 +48,8 @@ public class Enemy : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-        else if (collision.transform.CompareTag("Player") && playerKills)
+        // WAS PREVIOUSLY else if (collision.transform.CompareTag("Player") && playerKills)
+        else if (collision.GetContact(0).collider.transform.CompareTag("Player") && playerKills && !collision.GetContact(0).otherCollider.transform.CompareTag("Kill player"))
         {
             hitpoints -= collision.gameObject.GetComponent<Player>().damage;
             DecreaseHealthBar();

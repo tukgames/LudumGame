@@ -24,10 +24,16 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(collision.transform.tag);
+        // Old Code before change to support children
+        /*
         if(collision.transform.CompareTag("Kill player"))
         {
             //Debug.Log("Player hit a killing object.");
+            KillPlayer();
+        }
+        */
+
+        if(collision.GetContact(0).collider.transform.CompareTag("Kill player")) {
             KillPlayer();
         }
     }
