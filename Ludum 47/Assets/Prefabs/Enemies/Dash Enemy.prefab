@@ -105,6 +105,7 @@ MonoBehaviour:
   hitpoints: 1
   startingHitPoints: 0
   scoreValue: 10
+  numCoinsSpawned: 2
   particlePrefab: {fileID: 9127205238536965998, guid: 87924814d48be814e87d6fc545a0735c,
     type: 3}
   target: {fileID: 0}

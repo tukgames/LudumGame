@@ -1144,6 +1144,7 @@ GameObject:
   - component: {fileID: 786270582}
   - component: {fileID: 786270583}
   - component: {fileID: 786270584}
+  - component: {fileID: 786270585}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -1277,6 +1278,20 @@ MonoBehaviour:
   multiplier: 0
   timeToLoseMult: 14
   timeGainMult: 5
+--- !u!114 &786270585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786270577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5d2bed7d426f934091c97776f6475b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bronzeCoinPrefab: {fileID: 7686236314364064595, guid: 2ad8bc3dc6a08a745841f2335edfd55c,
+    type: 3}
 --- !u!1 &920613798
 GameObject:
   m_ObjectHideFlags: 0

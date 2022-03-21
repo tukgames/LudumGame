@@ -41,6 +41,8 @@ public class GameManager : MonoBehaviour
     {
         playerReference = playerSpawner.spawnObject();
 
+        CoinManager.instance.restartGame();
+
         Camera.main.GetComponent<CameraFollow>().target = playerReference.transform;
 
         foreach (GameObject gameObj in GameObject.FindObjectsOfType<GameObject>())

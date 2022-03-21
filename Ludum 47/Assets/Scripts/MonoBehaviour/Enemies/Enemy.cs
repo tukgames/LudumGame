@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
     public int startingHitPoints;
 
     public int scoreValue;
+    public int numCoinsSpawned;
 
     //public int distanceToDestroy = 100;
 
@@ -131,6 +132,10 @@ public class Enemy : MonoBehaviour
     public void PlayerKilled()
     {
         ScoreManager.instance.EnemyKilled(scoreValue);
+        for (int i = 0; i < numCoinsSpawned; i++)
+        {
+            CoinManager.instance.SpawnCoin(transform.position);
+        }
     }
 
     

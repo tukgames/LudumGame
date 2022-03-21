@@ -36,6 +36,18 @@ public class Player : MonoBehaviour
         if(collision.GetContact(0).collider.transform.CompareTag("Kill player")) {
             KillPlayer();
         }
+        /*if (collision.GetContact(0).collider.transform.CompareTag("Coin"))
+        {
+            collision.transform.GetComponent<Coin>().Collect();
+        }*/
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.transform.CompareTag("Coin"))
+        {
+            collision.transform.GetComponent<Coin>().Collect();
+        }
     }
 
 
