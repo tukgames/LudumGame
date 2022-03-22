@@ -6,6 +6,12 @@ public class CoinManager : MonoBehaviour
 {
     public static CoinManager instance;
     public GameObject bronzeCoinPrefab;
+    public GameObject silverCoinPrefab;
+    public GameObject goldCoinPrefab;
+
+    public int goldSpawnPercent;
+    public int silverSpawnPercent;
+    public int bronzeSpawnPercent;
 
     private void Awake()
     {
@@ -57,7 +63,19 @@ public class CoinManager : MonoBehaviour
 
     public void SpawnCoin(Vector3 location)
     {
-        Coin coin = Instantiate(bronzeCoinPrefab, location, Quaternion.identity).GetComponent<Coin>();
+        GameObject pref = null;
+        int randNum = Random.Range(1, 101);
+        if(randNum <= goldSpawnPercent)
+        {
+            pref = goldCoinPrefab;
+        } else if(randNum <= silverSpawnPercent + goldSpawnPercent)
+        {
+            pref = silverCoinPrefab;
+        } else
+        {
+            pref = bronzeCoinPrefab;
+        }
+        Coin coin = Instantiate(pref, location, Quaternion.identity).GetComponent<Coin>();
         coin.spawn();
     }
 }

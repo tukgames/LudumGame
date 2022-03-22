@@ -1292,6 +1292,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bronzeCoinPrefab: {fileID: 7686236314364064595, guid: 2ad8bc3dc6a08a745841f2335edfd55c,
     type: 3}
+  silverCoinPrefab: {fileID: 6250487695327101921, guid: aa82a15062f4288478c76d8dbaafad47,
+    type: 3}
+  goldCoinPrefab: {fileID: 5900097979634359820, guid: 595c5f94b6e6c9b4395092ae55f63979,
+    type: 3}
+  goldSpawnPercent: 10
+  silverSpawnPercent: 20
+  bronzeSpawnPercent: 0
 --- !u!1 &920613798
 GameObject:
   m_ObjectHideFlags: 0
