@@ -101,7 +101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerKills: 1
   wallKills: 0
-  spawnProbability: 20
+  spawnProbability: 8
   hitpoints: 1
   startingHitPoints: 0
   scoreValue: 10

@@ -108,7 +108,7 @@ public class DashEnemy : Enemy
 
                 
                 
-                if (clock >= 2 && animManager.opened) {
+                if (clock >= 4.25 && animManager.opened) {
                     animManager.closeAnim();
                 }
 
