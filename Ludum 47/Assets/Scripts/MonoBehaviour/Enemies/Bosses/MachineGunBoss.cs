@@ -89,6 +89,6 @@ public class MachineGunBoss : MonoBehaviour
             yield return null;
         }
 
-        Debug.Log(Time.time - startTime);
+        //Debug.Log(Time.time - startTime);
     }
 }
