@@ -21,8 +21,8 @@ TagManager:
   - Coin
   - Wall
   - WallCollide
-  - 
-  - 
+  - DashEnemyExtra
+  - Enemy
   - 
   - 
   - 

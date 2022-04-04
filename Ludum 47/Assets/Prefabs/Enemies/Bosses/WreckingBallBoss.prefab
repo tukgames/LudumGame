@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4698749751747249213}
   - component: {fileID: 4698749751747249202}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: spike (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4698749751768107173}
   - component: {fileID: 4698749751768107162}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: spike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4698749752076276088}
   - component: {fileID: 4698749752076276089}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: spike (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4698749753140782394}
   - component: {fileID: 4698749753140782395}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: spike (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 4698749753306915182}
   - component: {fileID: 4698749753306915171}
   - component: {fileID: 5829978320966939204}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: WreckingBallBoss
   m_TagString: Kill player
   m_Icon: {fileID: 0}

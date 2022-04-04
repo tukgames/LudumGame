@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7255404571330163476}
   - component: {fileID: 7255404571330163475}
   - component: {fileID: 7255404571330163477}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Gun enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7255404571390918628}
   - component: {fileID: 7255404571390918629}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,7 +274,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7255404571847689418}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: spawn point
   m_TagString: Untagged
   m_Icon: {fileID: 0}

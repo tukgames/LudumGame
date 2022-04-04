@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4403533904110868861}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Particle Spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 4320857215618937756}
   - component: {fileID: 4320857215618937762}
   - component: {fileID: -2340076433053932300}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Rail Gun Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}

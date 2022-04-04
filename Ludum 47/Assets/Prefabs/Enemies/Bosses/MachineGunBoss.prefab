@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5856104098549383250}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5856104099135717479}
   - component: {fileID: 5856104099135717478}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 5856104099614959357}
   - component: {fileID: 5856104099614959354}
   - component: {fileID: 5856104099614959356}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: MachineGunBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}

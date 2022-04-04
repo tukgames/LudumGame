@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4222576799033619045}
   - component: {fileID: 4222576799033619046}
   - component: {fileID: -8527649258795422194}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Instant Enemy
   m_TagString: Kill player
   m_Icon: {fileID: 0}
@@ -152,5 +152,9 @@ MonoBehaviour:
   playerKills: 0
   wallKills: 0
   spawnProbability: 9
+  hitpoints: 0
+  startingHitPoints: 0
+  scoreValue: 0
+  numCoinsSpawned: 0
   particlePrefab: {fileID: 9127205238536965998, guid: 87924814d48be814e87d6fc545a0735c,
     type: 3}
