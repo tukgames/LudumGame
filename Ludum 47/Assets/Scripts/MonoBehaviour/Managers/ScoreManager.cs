@@ -28,6 +28,7 @@ public class ScoreManager : MonoBehaviour
     float timerGain;
 
     bool timerRunning;
+    public multiplierBar multBar;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +40,8 @@ public class ScoreManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        //Debug.Log(multiplier);
         if (timerRunning)
         {
             // Reset multiplier if the time it takes to lose multiplier occurs
@@ -48,6 +51,8 @@ public class ScoreManager : MonoBehaviour
             {
                 timerLose = 0;
                 multiplier = 1;
+                multBar.updateMultBarWidth(multiplier);
+                Debug.Log("reset multiplier");
             }
         }
 
@@ -66,6 +71,8 @@ public class ScoreManager : MonoBehaviour
         if(timerGain <= timeGainMult)
         {
             multiplier += 1;
+            multBar.updateMultBarWidth(multiplier);
+            Debug.Log("incremented multiplier " + multiplier);
         }
 
         timerGain = 0;
