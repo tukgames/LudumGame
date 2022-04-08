@@ -41,6 +41,7 @@ public class ScoreManager : MonoBehaviour
     {
         if (timerRunning)
         {
+            // Reset multiplier if the time it takes to lose multiplier occurs
             timerLose += Time.deltaTime;
 
             if(timerLose >= timeToLoseMult)
@@ -50,14 +51,18 @@ public class ScoreManager : MonoBehaviour
             }
         }
 
+        // Total runtime
         timerGain += Time.deltaTime;
     }
 
     public void EnemyKilled(int value)
     {
+        // Add score based on enemy value and multiplier
         score += value * multiplier;
+        // Resets mult loss timer
         timerLose = 0;
-
+        
+        
         if(timerGain <= timeGainMult)
         {
             multiplier += 1;

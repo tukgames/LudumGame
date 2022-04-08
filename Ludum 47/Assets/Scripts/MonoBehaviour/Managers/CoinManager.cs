@@ -25,8 +25,10 @@ public class CoinManager : MonoBehaviour
         }
     }
     // Start is called before the first frame update
-    float totalCoins  =  0;
-    float coinsThisRound = 0;
+
+    [HideInInspector] public float totalCoins  =  0;
+    [HideInInspector] public float coinsThisRound = 0;
+
     void Start()
     {
         
