@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7633991377959173740}
   - component: {fileID: 7633991377959173741}
   - component: {fileID: 7633991377959173648}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Bullet
   m_TagString: Kill player
   m_Icon: {fileID: 0}
@@ -149,6 +149,9 @@ MonoBehaviour:
   wallKills: 1
   spawnProbability: 0
   hitpoints: 0
+  startingHitPoints: 0
+  scoreValue: 0
+  numCoinsSpawned: 0
   particlePrefab: {fileID: 0}
   speed: 10
 --- !u!114 &7633991377959173648

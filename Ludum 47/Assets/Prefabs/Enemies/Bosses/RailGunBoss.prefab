@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8795078089293972464}
   - component: {fileID: 8795078089293972467}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: gun (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8795078089448046741}
   - component: {fileID: 8795078089448046740}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: gun (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,7 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8795078089562430329}
   - component: {fileID: 8795078089562430328}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: gun (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8795078089677982819}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -289,7 +289,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8795078089679782272}
   - component: {fileID: 8795078089679782275}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: gun (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -372,7 +372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8795078089835185379}
   - component: {fileID: 8795078089835185378}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: gun (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -454,7 +454,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8795078089849207476}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -490,7 +490,7 @@ GameObject:
   - component: {fileID: 8558660976691263106}
   - component: {fileID: 8768134376304657513}
   - component: {fileID: 334558096479689906}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: RailGunBoss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -680,7 +680,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8795078089887804860}
   - component: {fileID: 8795078089887804863}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: gun (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -762,7 +762,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8795078089960789762}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -792,7 +792,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8795078090016858618}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -823,7 +823,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8795078090193346616}
   - component: {fileID: 8795078090193346619}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -906,7 +906,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8795078090381199113}
   - component: {fileID: 8795078090381199112}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: gun (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -988,7 +988,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8795078090756052769}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1018,7 +1018,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8795078090790132933}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1048,7 +1048,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8795078091055258530}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1078,7 +1078,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8795078091061166116}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}

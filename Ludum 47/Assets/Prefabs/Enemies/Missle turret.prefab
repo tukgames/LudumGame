@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8298466308791899956}
   - component: {fileID: 8298466308791899957}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: spawn point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 8298466310535248774}
   - component: {fileID: 8298466310535248768}
   - component: {fileID: 6812200550190200642}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Missle turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8298466310535435748}
   - component: {fileID: 8298466310535435749}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -272,7 +272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8298466310781182924}
   - component: {fileID: 8298466310781182925}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: axis
   m_TagString: Untagged
   m_Icon: {fileID: 0}

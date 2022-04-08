@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1991859662519885677}
   - component: {fileID: 1991859662519885675}
   - component: {fileID: 5455422568280996780}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Dash Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33,6 +33,7 @@ Transform:
   m_Children:
   - {fileID: 1991859663069931700}
   - {fileID: 5970432476263766855}
+  - {fileID: 2598002920483179843}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -121,7 +122,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1991859663069931700}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: spawn point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +156,7 @@ GameObject:
   - component: {fileID: 6665660252196196409}
   - component: {fileID: 2875452491806933075}
   - component: {fileID: 1807755772876234226}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: dasher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -544,7 +545,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2483772087283001114}
   - component: {fileID: 3243342890986775779}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -627,7 +628,7 @@ GameObject:
   - component: {fileID: 4620970597039938642}
   - component: {fileID: 2901782214818811497}
   - component: {fileID: 3103403103750782967}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: spike
   m_TagString: Kill player
   m_Icon: {fileID: 0}
@@ -883,6 +884,67 @@ PolygonCollider2D:
       - {x: -8.09, y: -2.655}
       - {x: -8.07, y: -2.675}
       - {x: -7.99, y: -2.675}
+--- !u!1 &7427158429728305689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2598002920483179843}
+  - component: {fileID: 1909127526923649185}
+  m_Layer: 12
+  m_Name: EnemyCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2598002920483179843
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7427158429728305689}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1991859662519885676}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &1909127526923649185
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7427158429728305689}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.6829052, y: 0.5974455}
+      - {x: -0.72119385, y: 0.21839884}
+      - {x: -0.74593157, y: -0.1548661}
+      - {x: -0.742082, y: -0.5502322}
+      - {x: 1.4830034, y: -0.007275641}
 --- !u!1 &8747999906619004993
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,7 +955,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8632562841807126055}
   - component: {fileID: 1701723975591870802}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: top
   m_TagString: Untagged
   m_Icon: {fileID: 0}

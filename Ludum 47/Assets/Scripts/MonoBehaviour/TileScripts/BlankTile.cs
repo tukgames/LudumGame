@@ -73,6 +73,13 @@ public class BlankTile : MonoBehaviour
                 collision.GetComponent<Enemy>().DestroyEnemy();
                // Debug.Log("Killed enemy");
             }
+        } else if(collision.transform.parent.transform.GetComponent<Enemy>() != null)
+        {
+            if (!collision.isTrigger)
+            {
+                collision.transform.parent.transform.GetComponent<Enemy>().DestroyEnemy();
+                // Debug.Log("Killed enemy");
+            }
         }
 
     }

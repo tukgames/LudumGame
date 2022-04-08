@@ -13,6 +13,7 @@ public class DashEnemy : Enemy
     // Stages: 0-Wander 1-Aim 2-Charge 3-Dash
     int stage = 0;
     float clock = 0;
+    bool playerLeft = false;
 
     // Set body to the object that holds the DashAnimationManager
     DashAnimationManager animManager;
@@ -117,6 +118,10 @@ public class DashEnemy : Enemy
                 if (clock >= 5) {
                     clock = 0;
                     stage = 0;
+                    if (playerLeft)
+                    {
+                        GetComponent<Wander>().StartWander();
+                    }
                 }
             }
 
@@ -134,7 +139,19 @@ public class DashEnemy : Enemy
             GetComponent<Wander>().StopWander();
             stage = 1;
             //Debug.Log("Stage 1");
+            playerLeft = false;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.transform.CompareTag("Player"))
+        {
             
+            //GetComponent<Wander>().StartWander();
+            Debug.Log("player exited");
+            //Debug.Log("Stage 1");
+            playerLeft = true;
         }
     }
 
