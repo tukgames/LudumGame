@@ -15,6 +15,7 @@ public class Tile : MonoBehaviour
 
     public bool isStarting;
     public bool isBoss;
+    public bool isPortal;
 
     public bool spawnsEnemies;
 
@@ -54,6 +55,10 @@ public class Tile : MonoBehaviour
                 //Debug.Log("Got here");
                 TileGenerator.instance.SpawnBlank(xValue, yValue);
                 TileGenerator.instance.currentTiles.Remove(gameObject);
+                if (isPortal)
+                {
+                    BossManager.instance.alreadyBoss = false;
+                }
                 //Debug.Log("Got here 2");
                 Destroy(gameObject);
             }

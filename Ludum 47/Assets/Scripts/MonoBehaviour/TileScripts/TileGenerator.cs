@@ -30,6 +30,7 @@ public class TileGenerator : MonoBehaviour
     public GameObject blankPrefab;
 
     public float tileWidth;
+    public float disToSpawnFinalPortal;
     void Start()
     {
        /*for(int i = -5; i <= 5; i++)
@@ -250,6 +251,20 @@ public class TileGenerator : MonoBehaviour
             }
         }
 
+        if(disToSpawnFinalPortal > Mathf.Abs(x) + Mathf.Abs(y))
+        {
+            for(int i = possibleTiles.Count-1; i >= 0; i--)
+            {
+                if (possibleTiles[i].GetComponent<Tile>().isPortal)
+                {
+
+                    Debug.Log("Removed " + possibleTiles[i].name);
+                    possibleTiles.Remove(possibleTiles[i]);
+                }
+            }
+        }
+
+
 
         //int val = Random.Range(0,possibleTiles.Count);
 
@@ -285,6 +300,7 @@ public class TileGenerator : MonoBehaviour
 
     public GameObject getTileToSpawn(List<GameObject> tiles)
     {
+        //Debug.Log(tiles.ToString());
         int totalPriority = 0;
 
         foreach(GameObject tile in tiles)

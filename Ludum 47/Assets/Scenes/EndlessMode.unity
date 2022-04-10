@@ -1313,11 +1313,13 @@ MonoBehaviour:
   - {fileID: 41339463312633174, guid: 657955ca7f34b6e4195d3df41a61c422, type: 3}
   - {fileID: 41339463312633174, guid: 46eb12037e02f50408ed59ec670677ee, type: 3}
   - {fileID: 41339463312633174, guid: 9493b9664bd229c4b928c61d8157f991, type: 3}
+  - {fileID: 41339463312633174, guid: 543137c48920b1f4c83aedeb2259cc11, type: 3}
   currentTiles: []
   currentBlankTiles: []
   blankPrefab: {fileID: 41339463312633174, guid: 335c9cf411a9dbd42a375dd6c68a38f3,
     type: 3}
   tileWidth: 31
+  disToSpawnFinalPortal: 100
 --- !u!114 &786270582
 MonoBehaviour:
   m_ObjectHideFlags: 0
