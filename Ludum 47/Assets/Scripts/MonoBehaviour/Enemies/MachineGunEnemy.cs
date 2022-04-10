@@ -20,9 +20,16 @@ public class MachineGunEnemy : Enemy
     // Start is called before the first frame update
     void Start()
     {
+
         firing = false;
         wander = GetComponent<Wander>();
-        target = GameManager.instance.playerReference.transform;
+        if (GameManager.instance.playerReference != null)
+        {
+            target = GameManager.instance.playerReference.transform;
+        } else
+        {
+            target = transform;
+        }
         //wander.StartWander();
     }
 

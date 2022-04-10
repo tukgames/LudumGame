@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7255404571330163475}
   - component: {fileID: 7255404571330163477}
   m_Layer: 13
-  m_Name: Gun enemy
+  m_Name: Machine Gun Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

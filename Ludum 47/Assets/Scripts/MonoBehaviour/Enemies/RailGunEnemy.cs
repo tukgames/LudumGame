@@ -19,6 +19,9 @@ public class RailGunEnemy : Enemy
         if (GameManager.instance.playerReference != null)
         {
            target = GameManager.instance.playerReference.transform;
+        } else
+        {
+            target = transform;
         }
     }
 

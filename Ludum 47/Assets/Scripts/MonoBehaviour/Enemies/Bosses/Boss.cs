@@ -65,7 +65,10 @@ public class Boss : Enemy
     private void OnDestroy()
     {
         DestroyHealthBar();
-        BossManager.instance.alreadyBoss = false;
+        if (BossManager.instance != null)
+        {
+            BossManager.instance.alreadyBoss = false;
+        }
         //Debug.Log("boss was destroyed");
     }
 

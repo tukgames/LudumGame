@@ -55,7 +55,10 @@ public class StateManager : MonoBehaviour
         playerDead = true;
         gamePaused = false;
         Time.timeScale = 1;
-        deathPanel.SetActive(true);
+        if (deathPanel != null)
+        {
+            deathPanel.SetActive(true);
+        }
     }
 
 

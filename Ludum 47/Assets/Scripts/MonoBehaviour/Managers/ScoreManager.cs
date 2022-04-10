@@ -49,6 +49,7 @@ public class ScoreManager : MonoBehaviour
 
             if(timerLose >= timeToLoseMult)
             {
+                //Debug.Log("happened");
                 timerLose = 0;
                 multiplier = 1;
                 multBar.updateMultBarWidth(multiplier);

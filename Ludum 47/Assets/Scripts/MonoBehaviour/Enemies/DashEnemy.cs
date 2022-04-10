@@ -31,6 +31,10 @@ public class DashEnemy : Enemy
         if (GameManager.instance.playerReference != null) {
             target = GameManager.instance.playerReference.transform;
         }
+        else
+        {
+            target = transform;
+        }
     }
 
     // Update is called once per frame

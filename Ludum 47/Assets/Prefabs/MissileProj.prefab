@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -2879601315622364011}
   - component: {fileID: -6504601297666610480}
   m_Layer: 0
-  m_Name: Missile
+  m_Name: MissileProj
   m_TagString: Kill player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -179,5 +179,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerKills: 0
   wallKills: 1
+  spawnProbability: 0
+  hitpoints: 0
+  startingHitPoints: 0
+  scoreValue: 0
+  numCoinsSpawned: 0
   particlePrefab: {fileID: 4020185735772678057, guid: 8ab83d7ec46b05046880d36a6067f7e5,
     type: 3}

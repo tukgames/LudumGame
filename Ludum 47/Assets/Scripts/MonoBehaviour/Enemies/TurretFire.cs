@@ -10,12 +10,15 @@ public class TurretFire : MonoBehaviour
     public int shootSpeed;
     void Start()
     {
-        StartCoroutine(shootRoutine());
-
         if (GameManager.instance.playerReference != null)
         {
             target = GameManager.instance.playerReference.transform;
+        } else
+        {
+            target = transform;
         }
+        StartCoroutine(shootRoutine());
+
     }
 
     // Update is called once per frame

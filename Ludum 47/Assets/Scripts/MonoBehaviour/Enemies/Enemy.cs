@@ -131,7 +131,10 @@ public class Enemy : MonoBehaviour
 
     public void PlayerKilled()
     {
-        ScoreManager.instance.EnemyKilled(scoreValue);
+        if (ScoreManager.instance != null)
+        {
+            ScoreManager.instance.EnemyKilled(scoreValue);
+        }
         for (int i = 0; i < numCoinsSpawned; i++)
         {
             CoinManager.instance.SpawnCoin(transform.position);

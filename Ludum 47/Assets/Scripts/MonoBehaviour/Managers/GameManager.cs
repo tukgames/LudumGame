@@ -41,7 +41,10 @@ public class GameManager : MonoBehaviour
     {
         playerReference = playerSpawner.spawnObject();
 
-        CoinManager.instance.restartGame();
+        if (CoinManager.instance != null)
+        {
+            CoinManager.instance.restartGame();
+        }
 
         Camera.main.GetComponent<CameraFollow>().target = playerReference.transform;
 
@@ -54,7 +57,7 @@ public class GameManager : MonoBehaviour
         }
         foreach (GameObject gameObj in GameObject.FindObjectsOfType<GameObject>())
         {
-            if (gameObj.name == "spawn point")
+            if (gameObj.name == "spawn point turret")
             {
                 gameObj.GetComponent<TurretFire>().target = playerReference.transform;
             }
@@ -66,6 +69,28 @@ public class GameManager : MonoBehaviour
                 gameObj.GetComponent<RailGunEnemy>().target = playerReference.transform;
             }
         }
+        foreach (GameObject gameObj in GameObject.FindObjectsOfType<GameObject>())
+        {
+            if (gameObj.name.Contains("MissleProj"))
+            {
+                gameObj.GetComponent<MissleFollow>().target = playerReference.transform;
+            }
+        }
+        foreach (GameObject gameObj in GameObject.FindObjectsOfType<GameObject>())
+        {
+            if (gameObj.name.Contains("Dash Enemy"))
+            {
+                gameObj.GetComponent<DashEnemy>().target = playerReference.transform;
+            }
+        }
+        foreach (GameObject gameObj in GameObject.FindObjectsOfType<GameObject>())
+        {
+            if (gameObj.name.Contains("Machine Gun Enemy"))
+            {
+                gameObj.GetComponent<MachineGunEnemy>().target = playerReference.transform;
+            }
+        }
+
 
     }
 }

@@ -13,6 +13,10 @@ public class MissleRotate : MonoBehaviour
         {
             target = GameManager.instance.playerReference.transform;
         }
+        else
+        {
+            target = transform;
+        }
     }
 
     // Update is called once per frame

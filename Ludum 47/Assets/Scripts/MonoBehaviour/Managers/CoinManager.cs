@@ -42,13 +42,13 @@ public class CoinManager : MonoBehaviour
 
     public void AddCoin(float c)
     {
-        float a = 0;
-        if(ScoreManager.instance.multiplier > 0)
+        float a = c;
+        if (ScoreManager.instance != null)
         {
-            a = c * ScoreManager.instance.multiplier;
-        } else
-        {
-            a = c;
+            if (ScoreManager.instance.multiplier > 0)
+            {
+                a = c * ScoreManager.instance.multiplier;
+            }
         }
         coinsThisRound += a;
         totalCoins += a;

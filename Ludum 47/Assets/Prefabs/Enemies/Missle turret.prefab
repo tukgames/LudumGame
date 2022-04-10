@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8298466308791899956}
   - component: {fileID: 8298466308791899957}
   m_Layer: 13
-  m_Name: spawn point
+  m_Name: spawn point turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
