@@ -414,6 +414,11 @@ PrefabInstance:
       propertyPath: playerSpawner
       value: 
       objectReference: {fileID: 1512842933}
+    - target: {fileID: 6590188882770994116, guid: f24112a5ea1e14e458c1679057eb0975,
+        type: 3}
+      propertyPath: gamePaused
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24112a5ea1e14e458c1679057eb0975, type: 3}
 --- !u!1001 &1915864339
@@ -492,6 +497,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4250001169305348611, guid: 0bdc86982b25562408f7b808e1ddf2b1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4250001169704951088, guid: 0bdc86982b25562408f7b808e1ddf2b1,
         type: 3}
       propertyPath: m_Pivot.x
