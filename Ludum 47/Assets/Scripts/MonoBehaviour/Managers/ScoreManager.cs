@@ -24,7 +24,7 @@ public class ScoreManager : MonoBehaviour
     public float timeToLoseMult;
     public float timeGainMult;
 
-    float timerLose;
+    [HideInInspector] public float timerLose;
     float timerGain;
 
     bool timerRunning;
@@ -52,12 +52,12 @@ public class ScoreManager : MonoBehaviour
                 //Debug.Log("happened");
                 timerLose = 0;
                 multiplier = 1;
-                multBar.updateMultBarWidth(multiplier);
+                
                 Debug.Log("reset multiplier");
             }
         }
 
-        // Total runtime
+
         timerGain += Time.deltaTime;
     }
 
@@ -72,7 +72,6 @@ public class ScoreManager : MonoBehaviour
         if(timerGain <= timeGainMult)
         {
             multiplier += 1;
-            multBar.updateMultBarWidth(multiplier);
             Debug.Log("incremented multiplier " + multiplier);
         }
 

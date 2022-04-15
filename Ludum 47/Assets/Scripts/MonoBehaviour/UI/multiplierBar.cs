@@ -20,26 +20,26 @@ public class multiplierBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (sManager.multiplier != 1) {
+            updateMultBarWidth(sManager.timerLose);
+        } else {
+            updateMultBarWidth((float)0);
+        }
+
         float width = Mathf.Lerp(bar.sizeDelta.x, targ, Time.deltaTime*8);
         bar.sizeDelta = new Vector2(width, (float)7.5);
     }
 
-    public void updateMultBarWidth(float multiplier) {
-        multiplier--;
-        float scale = (mainCanvas.GetComponent<RectTransform>().sizeDelta.x) / 2 / 6;
-
-        // rational function
-        // float targ = scale * (-(9) / (multiplier + 2) + 4.5);
-        float val;
-        // square root
-        if(multiplier < 9) {
-            val = 2 * Mathf.Pow(multiplier, (float)0.5);
+    public void updateMultBarWidth(float val) {
+        if(val == 0) {
+            targ = 0;
         } else {
-            val = 6;
+            targ = -(1 / sManager.timeToLoseMult) * val + 1;
+            targ *= 600;
         }
-
-        targ = val * scale;
-        
+        if (targ < 0) {
+            targ = 0;
+        }
         
     }
 
