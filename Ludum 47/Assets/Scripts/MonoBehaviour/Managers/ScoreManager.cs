@@ -27,6 +27,8 @@ public class ScoreManager : MonoBehaviour
     [HideInInspector] public float timerLose;
     float timerGain;
 
+    bool hasKilled;
+
     bool timerRunning;
     public multiplierBar multBar;
     // Start is called before the first frame update
@@ -35,6 +37,7 @@ public class ScoreManager : MonoBehaviour
         timerRunning = true;
         score = 0;
         multiplier = 1;
+        hasKilled = false;
     }
 
     // Update is called once per frame
@@ -55,8 +58,10 @@ public class ScoreManager : MonoBehaviour
                
             }
         }
-
-        timerGain += Time.deltaTime;
+        if (hasKilled)
+        {
+            timerGain += Time.deltaTime;
+        }
     }
 
     public void EnemyKilled(int value)
@@ -65,6 +70,7 @@ public class ScoreManager : MonoBehaviour
         score += value * multiplier;
         // Resets mult loss timer
         timerLose = 0;
+        hasKilled = true;
         
         
         if(timerGain <= timeGainMult)
