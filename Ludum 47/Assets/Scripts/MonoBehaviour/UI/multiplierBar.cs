@@ -20,7 +20,7 @@ public class multiplierBar : MonoBehaviour
     // Update is called once per frame
     void Update() 
      {
-        Debug.Log(sManager.timerLose);
+        //Debug.Log(sManager.timerLose);
         if (sManager.multiplier != 1) {
             updateMultBarWidth(sManager.timerLose);
         } else {

@@ -283,4 +283,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b62c0d489682004b844040885906b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skin: {fileID: 21300000, guid: 6f3d3dedbd1e01747a68fb469de56f22, type: 3}
+  skin: {fileID: 21300000, guid: ed6155951d074284292345050aec2216, type: 3}
