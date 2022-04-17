@@ -11,6 +11,8 @@ public class Portal : MonoBehaviour
     //close multipler ditermines the force by closeM x affectdistance - distacnce = force
     public float closeMultiplier;
 
+    public string SceneToSpawn;
+
     void Start()
     {
 
@@ -32,6 +34,15 @@ public class Portal : MonoBehaviour
                 force *= closeMultiplier * (affectDistance - dist);
                 GameManager.instance.playerReference.GetComponent<Rigidbody2D>().AddForce(force, ForceMode2D.Impulse);
             }
+        }
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.transform.CompareTag("Player"))
+        {
+            SceneManage.instance.LoadScene(SceneToSpawn);
         }
     }
 }

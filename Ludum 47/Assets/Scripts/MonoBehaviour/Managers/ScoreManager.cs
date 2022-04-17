@@ -15,6 +15,9 @@ public class ScoreManager : MonoBehaviour
         } else
         {
             instance = this;
+            Debug.Log("Score Manager Reset");
+            ResetScoreManager();
+            //instance = this;
         }
     }
 
@@ -30,14 +33,10 @@ public class ScoreManager : MonoBehaviour
     bool hasKilled;
 
     bool timerRunning;
-    public multiplierBar multBar;
+    //public multiplierBar multBar;
     // Start is called before the first frame update
     void Start()
     {
-        timerRunning = true;
-        score = 0;
-        multiplier = 1;
-        hasKilled = false;
     }
 
     // Update is called once per frame
@@ -90,5 +89,14 @@ public class ScoreManager : MonoBehaviour
     public void ResumeLoseTimer()
     {
         timerRunning = true;
+    }
+
+    public void ResetScoreManager()
+    {
+        timerRunning = true;
+        score = 0;
+        multiplier = 1;
+        hasKilled = false;
+        timerGain = 0;
     }
 }

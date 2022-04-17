@@ -5,16 +5,23 @@ using UnityEngine;
 public class multiplierBar : MonoBehaviour
 {
 
-    public ScoreManager sManager;
+    ScoreManager sManager;
     public RectTransform bar;
     public GameObject mainCanvas;
 
     float targ;
 
+    void Awake()
+    {
+        //targ = 0;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         targ = 0;
+        sManager = ScoreManager.instance;
+        Debug.Log(ScoreManager.instance.score);
     }
 
     // Update is called once per frame

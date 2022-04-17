@@ -5,16 +5,18 @@ using UnityEngine;
 
 public class panelTextUpdater : MonoBehaviour
 {
-    public ScoreManager sManager;
+    ScoreManager sManager;
     public TextMeshProUGUI scoreText;
 
-    public CoinManager cManager;
+     CoinManager cManager;
     public TextMeshProUGUI coinsText;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        sManager = ScoreManager.instance;
+        cManager = CoinManager.instance;
         float a;
         string b;
         

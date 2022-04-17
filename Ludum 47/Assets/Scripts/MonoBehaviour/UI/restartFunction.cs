@@ -10,6 +10,9 @@ public class restartFunction : MonoBehaviour
     // This script exists only so unity's stupid (and useful) event system works
     
     public void runRestart() {
+        //CoinManager.instance.ResetCoins();
+        //ScoreManager.instance.ResetScoreManager();
+        //SceneManage.instance.Restart();
         ui.Restart();
         deadPanel.gameObject.SetActive(false);
 

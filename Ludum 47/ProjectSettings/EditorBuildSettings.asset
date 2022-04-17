@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndlessMode.unity
     guid: c5261f4a9c72c4f49a43a5d7ca7bab26
+  - enabled: 1
+    path: Assets/Scenes/FinalBoss.unity
+    guid: 5550eb6066a787748bdae816423abb70
   m_configObjects: {}

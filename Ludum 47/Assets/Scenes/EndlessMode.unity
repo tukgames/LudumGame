@@ -399,6 +399,7 @@ GameObject:
   - component: {fileID: 786270583}
   - component: {fileID: 786270584}
   - component: {fileID: 786270585}
+  - component: {fileID: 786270586}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -432,7 +433,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2d572648f0a3f04683f663095ed457f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpawner: {fileID: 1581941329}
   playerReference: {fileID: 0}
 --- !u!114 &786270580
 MonoBehaviour:
@@ -481,7 +481,7 @@ MonoBehaviour:
   blankPrefab: {fileID: 41339463312633174, guid: 335c9cf411a9dbd42a375dd6c68a38f3,
     type: 3}
   tileWidth: 31
-  disToSpawnFinalPortal: 90
+  disToSpawnFinalPortal: 0
 --- !u!114 &786270582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -534,6 +534,7 @@ MonoBehaviour:
   multiplier: 0
   timeToLoseMult: 14
   timeGainMult: 5
+  timerLose: 0
   multBar: {fileID: 184439156}
 --- !u!114 &786270585
 MonoBehaviour:
@@ -558,6 +559,19 @@ MonoBehaviour:
   bronzeSpawnPercent: 0
   totalCoins: 0
   coinsThisRound: 0
+--- !u!114 &786270586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786270577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7240d5a1b97f69441b6a04ee3877ce3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseScene: EndlessMode
 --- !u!850595691 &1054943065
 LightingSettings:
   m_ObjectHideFlags: 0

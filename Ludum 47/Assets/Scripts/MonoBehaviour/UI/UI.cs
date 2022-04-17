@@ -9,6 +9,7 @@ public class UI : MonoBehaviour
 
     public static UI instance;
 
+    public GameObject DeathPanel;
     
 
     public void Awake()
@@ -25,7 +26,8 @@ public class UI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        //Pass the Death Panel to the State Manager
+        StateManager.instance.deathPanel = DeathPanel;
     }
 
     // Update is called once per frame
@@ -48,6 +50,9 @@ public class UI : MonoBehaviour
     public void Restart()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManage.instance.Restart();
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
+
 }

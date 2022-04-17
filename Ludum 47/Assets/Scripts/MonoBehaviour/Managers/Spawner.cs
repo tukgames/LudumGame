@@ -8,7 +8,7 @@ public class Spawner : MonoBehaviour
     public GameObject playerPrefab;
     void Start()
     {
-        
+        GameManager.instance.SpawnPlayer(this);
     }
 
     // Update is called once per frame

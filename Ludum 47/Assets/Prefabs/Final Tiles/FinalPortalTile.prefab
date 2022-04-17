@@ -87,7 +87,7 @@ MonoBehaviour:
   right: 0
   xValue: 0
   yValue: 0
-  priority: 5
+  priority: 200
   isStarting: 0
   isBoss: 1
   isPortal: 1
@@ -6205,6 +6205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   affectDistance: 20
   closeMultiplier: 0.1
+  SceneToSpawn: FinalBoss
 --- !u!1 &7434687104938123609
 GameObject:
   m_ObjectHideFlags: 0

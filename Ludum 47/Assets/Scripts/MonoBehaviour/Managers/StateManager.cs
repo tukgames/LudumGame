@@ -8,7 +8,7 @@ public class StateManager : MonoBehaviour
     public bool gamePaused;
     public bool playerDead;
 
-    public GameObject deathPanel;
+    [HideInInspector]public GameObject deathPanel;
     
 
 
@@ -55,6 +55,8 @@ public class StateManager : MonoBehaviour
         playerDead = true;
         gamePaused = false;
         Time.timeScale = 1;
+        //ScoreManager.instance.ResetScoreManager();
+        //CoinManager.instance.ResetCoins();
         if (deathPanel != null)
         {
             deathPanel.SetActive(true);

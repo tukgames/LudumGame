@@ -368,6 +368,13 @@ public class TileGenerator : MonoBehaviour
         currentBlankTiles.Add(blank);
     }
 
+     //reset Tile Generator Class
+     public void Reset()
+    {
+        currentBlankTiles.Clear();
+        currentTiles.Clear();
+    }
+
 
 
 

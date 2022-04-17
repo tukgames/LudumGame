@@ -23,11 +23,12 @@ public class CoinManager : MonoBehaviour
         {
             instance = this;
         }
+        ResetCoins();
     }
     // Start is called before the first frame update
 
-    [HideInInspector] public float totalCoins  =  0;
-    [HideInInspector] public float coinsThisRound = 0;
+    [HideInInspector] public float totalCoins;
+    [HideInInspector] public float coinsThisRound;
 
     void Start()
     {
@@ -79,5 +80,13 @@ public class CoinManager : MonoBehaviour
         }
         Coin coin = Instantiate(pref, location, Quaternion.identity).GetComponent<Coin>();
         coin.spawn();
+    }
+
+    public void ResetCoins()
+    {
+        //this line is temp until save files
+        totalCoins = 0;
+
+        coinsThisRound = 0;
     }
 }

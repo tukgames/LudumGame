@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Spawner playerSpawner;
+    //public Spawner playerSpawner;
 
     public static GameManager instance;
 
@@ -20,11 +20,17 @@ public class GameManager : MonoBehaviour
         } else
         {
             instance = this;
+            DontDestroyOnLoad(gameObject);
         }
     }
+    void OnLoad()
+    {
+        //SpawnPlayer();
+    }
+
     void Start()
     {
-        SpawnPlayer();
+        //SpawnPlayer();
     }
 
 
@@ -37,7 +43,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void SpawnPlayer()
+    public void SpawnPlayer(Spawner playerSpawner)
     {
         playerReference = playerSpawner.spawnObject();
 

@@ -706,9 +706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a81fa24b629e4c94bbc66d465292e9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sManager: {fileID: 0}
   scoreText: {fileID: 4250001169184714371}
-  cManager: {fileID: 0}
   coinsText: {fileID: 4250001169144646830}
 --- !u!1 &4250001168643998008
 GameObject:
@@ -2788,6 +2786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPaused: 0
+  DeathPanel: {fileID: 4250001168349261092}
 --- !u!1 &4250001169872641385
 GameObject:
   m_ObjectHideFlags: 0
@@ -2951,6 +2950,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09daa1ece6b27b045b6e37974f2c88d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sManager: {fileID: 0}
   bar: {fileID: 4250001170025857995}
   mainCanvas: {fileID: 4250001169704951100}
