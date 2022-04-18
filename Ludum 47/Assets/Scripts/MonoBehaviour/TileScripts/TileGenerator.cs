@@ -284,11 +284,7 @@ public class TileGenerator : MonoBehaviour
                 BossManager.instance.alreadyBoss = true;
             }
 
-            GameObject til = Instantiate(toSpawn, new Vector3((float)x * tileWidth, (float)y * tileWidth, 0), Quaternion.identity);
-            til.transform.localScale = new Vector3(tileWidth * (til.transform.localScale.x / Mathf.Abs(til.transform.localScale.x)), tileWidth * (til.transform.localScale.y / Mathf.Abs(til.transform.localScale.y)),1f);
-            til.GetComponent<Tile>().xValue = x;
-            til.GetComponent<Tile>().yValue = y;
-            currentTiles.Add(til);
+            GameObject til = SpawnTile(toSpawn,x,y);
 
             if (til.GetComponent<Tile>().spawnsEnemies)
             {
@@ -374,6 +370,20 @@ public class TileGenerator : MonoBehaviour
         currentBlankTiles.Clear();
         currentTiles.Clear();
     }
+
+
+    public GameObject SpawnTile(GameObject toSpawn, int x, int y)
+    {
+        GameObject til = Instantiate(toSpawn, new Vector3((float)x * tileWidth, (float)y * tileWidth, 0), Quaternion.identity);
+        til.transform.localScale = new Vector3(tileWidth * (til.transform.localScale.x / Mathf.Abs(til.transform.localScale.x)), tileWidth * (til.transform.localScale.y / Mathf.Abs(til.transform.localScale.y)), 1f);
+        til.GetComponent<Tile>().xValue = x;
+        til.GetComponent<Tile>().yValue = y;
+        currentTiles.Add(til);
+        return til;
+    }
+
+
+    
 
 
 

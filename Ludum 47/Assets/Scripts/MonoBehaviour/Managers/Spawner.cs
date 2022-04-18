@@ -20,6 +20,12 @@ public class Spawner : MonoBehaviour
     public GameObject spawnObject()
     {
         GameObject pl = Instantiate(playerPrefab, transform.position, Quaternion.identity);
+        Debug.Log("player spawned");
         return pl;
     }
+
+    /*private void OnDestroy()
+    {
+        Debug.Log("player was destroyed");
+    }*/
 }

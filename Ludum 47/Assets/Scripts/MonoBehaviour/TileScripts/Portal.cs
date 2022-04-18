@@ -42,6 +42,13 @@ public class Portal : MonoBehaviour
     {
         if (col.transform.CompareTag("Player"))
         {
+            if (transform.parent != null)
+            {
+                if (transform.parent.GetComponent<Tile>() != null)
+                {
+                    InitialTileManager.instance.coords = new Vector2(transform.parent.GetComponent<Tile>().xValue, transform.parent.GetComponent<Tile>().yValue);
+                }
+            }
             SceneManage.instance.LoadScene(SceneToSpawn);
         }
     }

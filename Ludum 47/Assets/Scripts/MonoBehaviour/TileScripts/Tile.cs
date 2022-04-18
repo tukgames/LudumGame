@@ -22,14 +22,15 @@ public class Tile : MonoBehaviour
     public List<GameObject> currentEnemies;
     void Start()
     {
-        if (isStarting)
+        /*if (isStarting)
         {
             TileGenerator.instance.currentTiles.Add(gameObject);
-        }
+        }*/
 
-        
+
 
         TileGenerator.instance.spawnSurroundingBlanks(xValue, yValue);
+        //Debug.Log("Spawned Surrounding Blanks");
         //List<GameObject> collidingEnemies = new List<GameObject>();
     }
 
@@ -76,13 +77,13 @@ public class Tile : MonoBehaviour
             }
 
         }
-        
+
 
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.GetComponent<Enemy>() != null)
+        if (collision.GetComponent<Enemy>() != null)
         {
             //add enemy to list
             if (!currentEnemies.Contains(collision.gameObject))
@@ -129,8 +130,13 @@ public class Tile : MonoBehaviour
         }
     }
 
-    
 
+    void OnDestroy()
+    {
+        if(isPortal){
+            BossManager.instance.alreadyBoss = false;
+        }
+    }
     
 
 

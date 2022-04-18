@@ -31,8 +31,7 @@ public class StateManager : MonoBehaviour
 
     void Start()
     {
-        gamePaused = false;
-        playerDead = false;
+        Reset();
     }
 
 
@@ -61,6 +60,12 @@ public class StateManager : MonoBehaviour
         {
             deathPanel.SetActive(true);
         }
+    }
+
+    public void Reset()
+    {
+        gamePaused = false;
+        playerDead = false;
     }
 
 

@@ -56,4 +56,11 @@ public class BossTlie : MonoBehaviour
     {
         
     }
+
+    void OnDestroy()
+    {
+
+        BossManager.instance.alreadyBoss = false;
+
+    }
 }
