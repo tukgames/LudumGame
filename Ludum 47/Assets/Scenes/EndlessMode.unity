@@ -123,6 +123,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &105784580 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4250001169305348614, guid: 0bdc86982b25562408f7b808e1ddf2b1,
+    type: 3}
+  m_PrefabInstance: {fileID: 4250001170130309818}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &416746698
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,6 +675,16 @@ PrefabInstance:
       propertyPath: sManager
       value: 
       objectReference: {fileID: 786270584}
+    - target: {fileID: 4250001169305348612, guid: 0bdc86982b25562408f7b808e1ddf2b1,
+        type: 3}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 105784580}
+    - target: {fileID: 4250001169305348614, guid: 0bdc86982b25562408f7b808e1ddf2b1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4250001169704951088, guid: 0bdc86982b25562408f7b808e1ddf2b1,
         type: 3}
       propertyPath: m_Pivot.x

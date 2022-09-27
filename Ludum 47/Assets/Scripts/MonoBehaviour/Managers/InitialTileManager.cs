@@ -47,6 +47,7 @@ public class InitialTileManager : MonoBehaviour
             GameObject temp = TileGenerator.instance.SpawnTile(InitialTile, 0, 0);
             temp.GetComponent<Tile>().spawnsEnemies = false;
             Instantiate(playerSpawner, Vector3.zero, Quaternion.identity);
+            playButtonManager.instance.StartScreen();
         } else
         {
             //figure out how to move the player spwaner
@@ -54,6 +55,8 @@ public class InitialTileManager : MonoBehaviour
             temp.GetComponent<Tile>().spawnsEnemies = false;
             Instantiate(playerSpawner, new Vector3(coords.x * TileGenerator.instance.tileWidth, coords.y * TileGenerator.instance.tileWidth, 0), Quaternion.identity);
             Camera.main.transform.position = new Vector3(coords.x * TileGenerator.instance.tileWidth, coords.y * TileGenerator.instance.tileWidth, Camera.main.transform.position.z);
+            playButtonManager.instance.NoStartScreen();
+        
         }
     }
 

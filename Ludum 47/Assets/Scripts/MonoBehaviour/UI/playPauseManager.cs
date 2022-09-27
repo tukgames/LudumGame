@@ -28,6 +28,11 @@ public class playPauseManager : MonoBehaviour
 
     public void toggle() {
         // Manages states based on bool and flips it when called
+        if (StateManager.instance.playerDead)
+        {
+            return;
+            //wont let you pause or unpause when player is dead
+        }
         if (toggleBool) {
             pause();
 
