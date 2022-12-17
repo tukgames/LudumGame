@@ -58,10 +58,10 @@ public class CoinManager : MonoBehaviour
         Debug.Log("Coins: " + coinsThisRound);
     }
 
-    public void restartGame()
+    /*public void restartGame()
     {
         coinsThisRound = 0;
-    }
+    }*/
 
 
     public void SpawnCoin(Vector3 location)
@@ -85,7 +85,7 @@ public class CoinManager : MonoBehaviour
     public void ResetCoins()
     {
         //this line is temp until save files
-        totalCoins = 0;
+        //totalCoins = 0;
 
         coinsThisRound = 0;
     }

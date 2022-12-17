@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
 
         if (CoinManager.instance != null)
         {
-            CoinManager.instance.restartGame();
+            CoinManager.instance.ResetCoins();
         }
 
         Camera.main.GetComponent<CameraFollow>().target = playerReference.transform;
